@@ -5,7 +5,7 @@ A 5 degree-of-freedom robotic arm that writes any sentence you type. The project
 > **Author:** Tejas
 > **Tools:** Fusion 360 · KiCad · MATLAB (Robotics Toolbox) · RoboDK · Python · Arduino IDE · Tinkercad
 
-[![RoboDK simulation - click to watch the video](robotic-arm-5dof/docs/images/robodk_stimulation_image.png)](robotic-arm-5dof/docs/videos/stimulation_vidio_compressed.mp4)
+[![RoboDK simulation - click to watch the video](robotic-arm-5dof/docs/images/robodk_stimulation_image.png)](robotic-arm-5dof/docs/videos/stimulation_video.gif)
 
 ▶ *Click the image above to watch the simulation video.*
 
@@ -223,7 +223,7 @@ The arm was simulated in **RoboDK** to check reachability, joint limits and coll
 
 ![RoboDK station](robotic-arm-5dof/docs/images/robodk_stimulation_image.png)
 
-▶ [Watch the simulation video](robotic-arm-5dof/docs/videos/stimulation_vidio_compressed.mp4)
+▶ [Watch the simulation video](robotic-arm-5dof/docs/videos/stimulation_video.gif)
 
 ---
 
