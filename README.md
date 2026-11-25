@@ -5,7 +5,7 @@ A 5 degree-of-freedom robotic arm that writes any sentence you type. The project
 > **Author:** Tejas
 > **Tools:** Fusion 360 · KiCad · MATLAB (Robotics Toolbox) · RoboDK · Python · Arduino IDE · Tinkercad
 
-[![RoboDK simulation - click to watch the video](docs/images/robodk_stimulation_image.png)](docs/videos/stimulation_vidio_compressed.mp4)
+[![RoboDK simulation - click to watch the video](robotic-arm-5dof/docs/images/robodk_stimulation_image.png)](robotic-arm-5dof/docs/videos/stimulation_vidio_compressed.mp4)
 
 ▶ *Click the image above to watch the simulation video.*
 
@@ -61,7 +61,7 @@ Sentence ──► Single-stroke font ──► (x, y, pen) points
                             └── Force sensor (pen pressure PID)
 ```
 
-![Circuit diagram](docs/images/tinkercad_circuit.png)
+![Circuit diagram](robotic-arm-5dof/docs/images/tinkercad_circuit.png)
 
 ---
 
@@ -98,7 +98,7 @@ robotic-arm-5dof/
 | Power supply | 1 | 10 V to 30 V input |
 | Screw terminals | TBD | Motor, sensor and supply connections |
 
-![Schematic diagram](docs/images/kicad_circuit.png)
+![Schematic diagram](robotic-arm-5dof/docs/images/kicad_circuit.png)
 
 ---
 
@@ -114,7 +114,7 @@ The arm was modelled in **Fusion 360**.
 4. Assembled all parts with joints and checked the range of motion.
 5. Exported parts as STL for 3D printing, and as a STEP file for RoboDK.
 
-![CAD isometric view](docs/images/cad_image.png)
+![CAD isometric view](robotic-arm-5dof/docs/images/cad_image.png)
 
 ---
 
@@ -139,9 +139,9 @@ The arm was modelled in **Fusion 360**.
 
 ### 6.2 PCB layout
 
-![KiCad PCB layout](docs/images/kicad_pcb_layout.png)
+![KiCad PCB layout](robotic-arm-5dof/docs/images/kicad_pcb_layout.png)
 
-![KiCad PCB](docs/images/kicad_pcb.png)
+![KiCad PCB](robotic-arm-5dof/docs/images/kicad_pcb.png)
 
 **Design notes:**
 
@@ -176,7 +176,7 @@ A(i) =  | sin(t)   cos(t)*cos(a)  -cos(t)*sin(a)   r*sin(t) |
 
 where `t` = theta, `a` = alpha, `r` = link length "a", `d` = link offset.
 
-![Transformation matrix output](docs/images/mathlab_calculations.png)
+![Transformation matrix output](robotic-arm-5dof/docs/images/mathlab_calculations.png)
 
 ### 7.3 Arm pose plot
 
@@ -185,7 +185,7 @@ KR.plot(q);
 KR.teach(q);
 ```
 
-![MATLAB arm plot](docs/images/mathlab_image.png)
+![MATLAB arm plot](robotic-arm-5dof/docs/images/mathlab_image.png)
 
 ### 7.4 Jacobian and velocity
 
@@ -221,9 +221,9 @@ The arm was simulated in **RoboDK** to check reachability, joint limits and coll
 4. Created a reference frame for the paper and added a target for each letter stroke.
 5. Ran the motion program and checked for singularities and out-of-reach points.
 
-![RoboDK station](docs/images/robodk_stimulation_image.png)
+![RoboDK station](robotic-arm-5dof/docs/images/robodk_stimulation_image.png)
 
-▶ [Watch the simulation video](docs/videos/stimulation_vidio_compressed.mp4)
+▶ [Watch the simulation video](robotic-arm-5dof/docs/videos/stimulation_vidio_compressed.mp4)
 
 ---
 
