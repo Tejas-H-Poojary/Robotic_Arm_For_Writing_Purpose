@@ -1,6 +1,6 @@
-# 5-DOF Robotic Writing Arm
+# 3-DOF Robotic Writing Arm
 
-A 5 degree-of-freedom robotic arm that writes any sentence you type. The project covers the full chain: mechanical design in CAD, a custom KiCad PCB, kinematics in MATLAB, a RoboDK simulation, a machine learning model, and Arduino firmware that drives the real arm.
+A 3 degree-of-freedom robotic arm that writes any sentence you type. The project covers the full chain: mechanical design in CAD, a custom KiCad PCB, kinematics in MATLAB, a RoboDK simulation, a machine learning model, and Arduino firmware that drives the real arm.
 
 > **Author:** Tejas
 > **Tools:** Fusion 360 · KiCad · MATLAB (Robotics Toolbox) · RoboDK · Python · Arduino IDE · Tinkercad
@@ -34,7 +34,7 @@ A 5 degree-of-freedom robotic arm that writes any sentence you type. The project
 
 **What was built:**
 
-- A 5-DOF arm designed in CAD, with a servo-driven joint set and a stepper-driven pen mechanism.
+- A 3-DOF arm designed in CAD, with a servo-driven joint set and a stepper-driven pen mechanism.
 - A custom PCB (KiCad) with power regulation, motor drivers and sensor inputs.
 - A kinematic model in MATLAB: DH parameters, forward kinematics, Jacobian, velocity and singularity analysis.
 - A simulation in RoboDK to test motions before running the real arm.
@@ -94,7 +94,7 @@ robotic-arm-5dof/
 | ULN2003 driver | 1 | Stepper driver |
 | LM2596S-ADJ buck converter | 2 | One for Nano logic rail, one for servo/stepper rail |
 | Force sensor (FSR) | 1 | Pen pressure feedback on A0 |
-| Schottky diode, inductors, capacitors, resistors | TBD | See the KiCad BOM |
+| Schottky diode, inductors, capacitors, resistors |
 | Power supply | 1 | 10 V to 30 V input |
 | Screw terminals | TBD | Motor, sensor and supply connections |
 
